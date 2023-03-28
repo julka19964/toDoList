@@ -1,0 +1,13 @@
+<div id="form-container">
+  <div class="task-title">
+    Task List
+  </div>
+  <div>
+    <form [formGroup]="myTask">
+      <input placeholder="Add new task..." formControlName="inputTask" #taskInput>
+      <button (click)="onAddItem()">
+        <mat-icon>add_circle_outline</mat-icon>
+      </button>
+    </form>
+  </div>
+</div>
